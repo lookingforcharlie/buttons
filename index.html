@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Buttons in Tailwind CSS</title>
+  </head>
+  <body>
+    <div
+      class="flex min-h-screen flex-col items-center justify-center overflow-hidden bg-gray-400 py-6 sm:py-12 space-y-12"
+    >
+      <div class="">
+        <button
+          class="relative border-2 bg-slate-600 text-white hover:border-solid border-gray-800 py-3 px-8 font-medium uppercase transition-transform duration-200 hover:opacity-70 hover:scale-95"
+        >
+          Button 1
+        </button>
+      </div>
+
+      <div>
+        <!-- we can also apply this for a tag -->
+        <!-- py-1: control the distance between underline and text -->
+        <!-- after:bg-black: control the color of the underline -->
+        <button
+          class="relative overflow-hidden py-1 after:h-[2px] after:w-full after:bottom-0 after:right-full after:bg-black after:absolute hover:after:right-0 after:duration-200"
+        >
+          Button 2
+        </button>
+      </div>
+
+      <div class="px-8 py-3">
+        <!-- before element in the top and left border, after element in the bottom and right border -->
+        <button
+          class="px-8 py-3 uppercase relative before:absolute before:w-2/3 before:h-2/3 before:top-0 before:left-0 before:border-t-2 before:border-l-2 before:border-black after:absolute after:w-2/3 after:h-2/3 after:bottom-0 after:right-0 after:border-b-2 after:border-r-2 after:border-black hover:before:w-full hover:before:h-full before:duration-200 hover:after:w-full hover:after:h-full hover:after:duration-200"
+        >
+          Button 3
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
